@@ -1,0 +1,8 @@
+   {
+    songTitle: "Skin",
+    songSinger: "Sixx:A.M.",
+    songLyrics: "<p> Paint yourself a picture <br/> Of what you wish you looked like <br/> Maybe then they just might <br/> Feel an ounce of your pain <br/> <br/> Come into focus <br/> Step out of the shadows <br/> It's a losing battle <br/> There's no need to be ashamed <br/> <br/> 'Cause they don't even know you <br/> All they see is scars <br/> They don't see the angel <br/> Living in your heart <br/> <br/> Let them find the real you <br/> Buried deep within <br/> Let them know with all you've got <br/> That you are not your skin <br/> <br/> Oh [2x] <br/> <br/> When they start to judge you <br/> Show them your true colors <br/> And do unto others <br/> As you'd have done to you <br/> <br/> Just rise above this <br/> Kill them with your kindness <br/> Ignorance is blindness <br/> They're the ones that stand to lose <br/> <br/> 'Cause they don't even know you <br/> All they see is scars <br/> They don't see the angel <br/> Living in your heart <br/> <br/> Let them find the real you <br/> Buried deep within <br/> Let them know with all you've got <br/> That you are not your skin <br/> <br/> Oh <br/> <br/> Well, they don't even know you <br/> All they see is scars <br/> And they don't see the angels <br/> Living in your heart <br/> <br/> So, let them find the real you <br/> Buried deep within <br/> Let them know with all you've got <br/> That you are not <br/> You are not your skin </p>",
+    songThumb: "https://www.startpage.com/av/proxy-image?piurl=http%3A%2F%2Fimages.genius.com%2Fdd7b0f7f7bbd308e88a293f3e6c8d34f.640x640x1.jpg",
+    songImg: "https://images.genius.com/dd7b0f7f7bbd308e88a293f3e6c8d34f.640x640x1.jpg",
+    songLink: "article-link1"
+}

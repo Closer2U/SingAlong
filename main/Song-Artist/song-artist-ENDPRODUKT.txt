@@ -1,0 +1,8 @@
+  {
+    songTitle: "Better than yourself",
+    songSinger: "Lukas Graham",
+    songLyrics: "<p> I got your letter back <br /> saying I could   </p>",
+    songThumb: "http://tobiasbogliolo.com/assets/imgs/cases/thumb-urban.jpg",
+    songImg: "http://tobiasbogliolo.com/assets/imgs/cases/case-urban4.jpg",
+    songLink: "article-link1"
+  },
