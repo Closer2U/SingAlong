@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    
+  
+  
+  <style type="text/css" media="all">
+    #myTable th,
+#myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header,
+#myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+  </style>
+</head>
+
+<body>
+  
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+    <table id="myTable"></table>
+    
+<script>
+  
+  let json =  [
+  {
+    "_id": "5af5cf0270d455a211200d4c",
+    "isActive": true,
+    "balance": "$3,507.97",
+    "picture": "http://placehold.it/32x32",
+    "age": 24,
+    "eyeColor": "brown",
+    "name": "Joseph Keller",
+    "gender": "male",
+    "company": "TWIIST",
+    "email": "josephkeller@twiist.com",
+    "phone": "+1 (827) 592-2357",
+    "address": "661 Terrace Place, Elliott, Ohio, 9927",
+    "about": "Id sint labore sint dolore ex laboris. Ea irure dolor est nulla laboris Lorem sint fugiat laborum officia commodo. Reprehenderit culpa non voluptate ea. Fugiat duis et deserunt ea enim et ipsum nostrud commodo quis quis laborum officia. Elit est anim quis deserunt nulla nostrud ea eiusmod quis adipisicing. Mollit exercitation officia ipsum ea aliqua amet aliqua esse amet minim. Ipsum quis cillum fugiat reprehenderit sit aliquip aute in excepteur dolore fugiat esse non non.\r\n",
+    "registered": "2014-12-10T07:18:10 +02:00",
+    "latitude": -84.359436,
+    "longitude": 156.008804,
+    "tags": [
+      "excepteur",
+      "eiusmod",
+      "laboris",
+      "fugiat",
+      "minim",
+      "dolor",
+      "qui"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Shields Terrell"
+      },
+      {
+        "id": 1,
+        "name": "Hilary Bruce"
+      },
+      {
+        "id": 2,
+        "name": "Lorraine Torres"
+      }
+    ]
+  }
+  ]
+
+let _html = `<tr class="header">
+            <th style="width:10%;">Picture</th>
+            <th style="width:15%;">Name</th>
+            <th style="width:5%;">Age</th>
+            <th style="width:5%;">Active</th>
+            <th style="width:20%;">Email</th>
+            <th style="width:20%;">Phone</th>
+            <th style="width:10%;">Company</th>
+            <th style="width:10%;">Balance</th>
+        </tr>`;
+
+for(let i = 0; i < json.length; i++){
+ _html += `<tr>
+            <td><img src="${json[i].picture}" /></td>
+            <td>${json[i].name}</td>
+            <td>${json[i].age}</td>
+            <td>${json[i].isActive}</td>
+            <td>${json[i].email}</td>
+            <td>${json[i].tel}</td>
+            <td>${json[i].company}</td>
+            <td>${json[i].balance}</td>
+        </tr>`;
+}
+
+myTable.innerHTML = _html;
+
+
+
+/* +++++++++++ search +++++++++++++++ */
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+</script>
+
+
+</body>
+
+</html>
