@@ -6,10 +6,19 @@
 }
 
 body {
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  
   font-family: 'Open Sans', sans-serif;
-  /* TODO insert svg background from spck teclast --> newest version there . this one deprecated*/
-  background: #FFCC80;
-  color: #444444;
+ /* background: #FFCC80;*/
+ background-size: 100%;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: center;
+background-image: url("data:image/svg+xml,%3Csvg fill='none' x='0' y='0' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' %3E%3CforeignObject width='100%25' height='100%25'%3E%3Cdiv xmlns='http://www.w3.org/1999/xhtml'%3E%3Cstyle%3E body %7B margin:0; padding:0; background-color: %23E8E6E4; overflow-y:hidden; height:105vh; width:100%;%0A%7D .particle %7B background-color: %233D3C3C; font-size: 0; border-radius:10%25; position: absolute;%0A%7D sub%7B font-size:9px; font-family:Helvetica; font-style:bold; font-weight:900; color: %233D3C3C; margin-left:84vw; margin-top:95vh; display:block; animation: particle-12 10s linear both infinite ;%0A%7D .particle:nth-child(1) %7B filter: blur(5px); left: 52vw; top: 91vh; height: 36px; width: 16px; animation: particle-1 7.34s linear both infinite -35s;%0A%7D @keyframes particle-1 %7B 0%25 %7B opacity: 0; transform: translate(0, 0); %7D 30%25 %7B opacity: 1; %7D 90%25 %7B opacity: 0; %7D 99.9%25 %7B transform: translate(1vw, -30vw); %7D 100%25 %7B opacity: 0; transform: translate(0, 0); %7D%0A%7D .particle:nth-child(2) %7B filter: blur(2px); left: 32vw; top: 91vh; height: 56px; width: 46px; transform: rotate(30deg); animation: particle-2 9.21s linear both infinite -35s;%0A%7D @keyframes particle-2 %7B 0%25 %7B opacity: 0; transform: translate(0, 0); %7D 20%25 %7B opacity: 1; %7D 90%25 %7B opacity: 0; %7D 99.9%25 %7B transform: translate(1vw, -30vw); %7D 100%25 %7B opacity: 0; transform: translate(0, 0); %7D%0A%7D .particle:nth-child(3) %7B filter: blur(0.5px); left: 63vw; top: 91vh; height: 16px; width: 16px; animation: particle-3 9.97s linear both infinite -35s;%0A%7D @keyframes particle-3 %7B 0%25 %7B opacity: 0; transform: translate(0, 0); %7D 20%25 %7B opacity: 1; %7D 90%25 %7B opacity: 0; %7D 99.9%25 %7B transform: translate(1vw, -30vw); %7D 100%25 %7B opacity: 0; transform: translate(0, 0); %7D%0A%7D .particle:nth-child(5) %7B filter: blur(3px); left: 65vw; top: 95vh; height: 56px; width: 56px; animation: particle-5 8.7s linear both infinite -35s;%0A%7D @keyframes particle-5 %7B 0%25 %7B opacity: 0; transform: translate(0, 0); %7D 20%25 %7B opacity: 1; %7D 90%25 %7B opacity: 0; %7D 99.9%25 %7B transform: translate(1vw, -30vw); %7D 100%25 %7B opacity: 0; transform: translate(0, 0); %7D%0A%7D .particle:nth-child(6) %7B filter: blur(0.5px); left: 62vw; top: 91vh; height: 30px; width: 30px; animation: particle-6 5.34s linear both infinite -35s;%0A%7D @keyframes particle-6 %7B 0%25 %7B opacity: 0; transform: translate(0, 0); %7D 30%25 %7B opacity: 1; %7D 90%25 %7B opacity: 0; %7D 99.9%25 %7B transform: translate(1vw, -30vw); %7D 100%25 %7B opacity: 0; transform: translate(0, 0); %7D%0A%7D particle:nth-child(7) %7B filter: blur(7px); left: 9vw; top: 91vh;' height: 46px; width: 36px; animation: particle-7 6.9s linear both infinite -35s;%0A%7D @keyframes particle-7 %7B 0%25 %7B opacity: 0; transform: translate(0, 0); %7D 30%25 %7B opacity: 1; %7D 90%25 %7B opacity: 0; %7D 99.9%25 %7B transform: translate(1vw, -30vw); %7D 100%25 %7B opacity: 0; transform: translate(0, 0); %7D%0A%7D .particle:nth-child(8) %7B filter: blur(1.6px); left: 12vw; top: 91vh; animation-delay:2s; height: 46px; width: 26px; transform: rotate(30deg); animation: particle-8 5.7s linear both infinite -35s;%0A%7D @keyframes particle-8 %7B 0%25 %7B opacity: 0; transform: translate(0, 0); %7D 20%25 %7B opacity: 1; %7D 90%25 %7B opacity: 0; %7D 99.9%25 %7B transform: translate(1vw, -30vw); %7D 100%25 %7B opacity: 0; transform: translate(0, 0); %7D%0A%7D .particle:nth-child(9) %7B filter: blur(5px); left: 8vw; top: 90vh; height: 56px; animation-delay:2s; width: 48px; animation: particle-9 9.8s linear both infinite -35s;%0A%7D @keyframes particle-9 %7B 0%25 %7B opacity: 0; transform: translate(0, 0); %7D 20%25 %7B opacity: 1; %7D 90%25 %7B opacity: 0; %7D 99.9%25 %7B transform: translate(1vw, -30vw); %7D 100%25 %7B opacity: 0; transform: translate(0, 0); %7D%0A%7D .particle:nth-child(10) %7B filter: blur(0.3px); left: 15vw; top: 91vh; height: 18px; width: 18px; animation: particle-10 4.4s linear both infinite -35s;%0A%7D @keyframes particle-10 %7B 0%25 %7B opacity: 0; transform: translate(0, 0); %7D 20%25 %7B opacity: 1; %7D 90%25 %7B opacity: 0; %7D 99.9%25 %7B transform: translate(1vw, -30vw); %7D 100%25 %7B opacity: 0; transform: translate(0, 0); %7D%0A%7D .particle:nth-child(11) %7B filter: blur(0.3px); left: 82vw; top: 92vh; height: 22px; width: 22px; animation-delay:0.734s; animation: particle-11 4.9s linear both infinite -35s;%0A%7D @keyframes particle-11 %7B 0%25 %7B opacity: 0; transform: translate(0, 0); %7D 30%25 %7B opacity: 1; %7D 90%25 %7B opacity: 0; %7D 99.9%25 %7B transform: translate(1vw, -30vw); %7D 100%25 %7B opacity: 0; transform: translate(0, 0); %7D%0A%7D .particle:nth-child(12) %7B filter: blur(5px); left: 84vw; top: 91vh; height: 82px; width: 62px; animation-delay:1.27s; animation: particle-12 10.6s linear both infinite -35s;%0A%7D @keyframes particle-12 %7B 0%25 %7B opacity: 0; transform: translate(0, 0); %7D 30%25 %7B opacity: 1; %7D 90%25 %7B opacity: 0; %7D 99.9%25 %7B transform: translate(1vw, -30vw); %7D 100%25 %7B opacity: 0; transform: translate(0, 0); %7D%0A%7D %3C/style%3E%3Cbody%3E%3Cdiv%3E%3Cdiv class='particle'%3E0%3C/div%3E%3Cdiv class='particle'%3E1%3C/div%3E%3Cdiv class='particle'%3E2%3C/div%3E%3Cdiv class='particle'%3E3%3C/div%3E%3Cdiv class='particle'%3E4%3C/div%3E%3Cdiv class='particle'%3E5%3C/div%3E%3Cdiv class='particle'%3E6%3C/div%3E%3Cdiv class='particle'%3E7%3C/div%3E%3Cdiv class='particle'%3E8%3C/div%3E%3Cdiv class='particle'%3E9%3C/div%3E%3Cdiv class='particle'%3E10%3C/div%3E%3Cdiv class='particle'%3E11%3C/div%3E%3Cdiv class='particle'%3E12%3C/div%3E%3Csub%3EYep, it's me %3C/sub%3E%3C/div%3E%3C/body%3E%3C/div%3E%3C/foreignObject%3E%3C/svg%3E") ;
+ 
+/*color: #444444;*/
 }
 
 /* Cards */
@@ -109,13 +118,14 @@ body {
 /* ---------------================TODO centering image not working ============-------------- */
 /* bei NEXT zu TOP springen */
 .modal-header img {
-  display: flex;
+  display: block;
   justify-content: center;
+
   text-align: center;
-  max-width: 100vh;
-  width: auto;
+  width: 100%;
+  
   height: auto;
-  max-height: 30vh;
+
 }
 
 .modal-body {
